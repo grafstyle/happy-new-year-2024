@@ -18,15 +18,25 @@
         <div class="container-sm">
 
             <form id="survey-form" class="row g-3">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" required="true" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
 
-                <label class="form-label" id="name-label" for="name">Name <input id="name" class="form-control" type="text"
-                        placeholder="Name" required="true"></label>
-                <br>
-                <label class="form-label" id="email-label" for="email">Email <input id="email" class="form-control" type="email"
-                        placeholder="Email" required="true"></label>
-                <br>
-                <label class="form-label" id="number-label" for="age">Age <input id="number" class="form-control" type="number" max="120"
-                        min="3" placeholder="age"></label>
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Name</label>
+                    <input type="name" class="form-control" required="true" id="username" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">You can use your nickname here.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="user-age" class="form-label">Age</label>
+                    <input type="number" class="form-control" required="true" id="user-age" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Please choose a real age, thanks.</div>
+                  </div>
+      
+
                 <br>
                 <label class="form-label" for="dropdown">Expectation</label>
                 <select class="form-control" name="selection" id="dropdown">
