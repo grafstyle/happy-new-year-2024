@@ -1,0 +1,9 @@
+.container-sm {
+    align-items: center;
+    margin: 50px;
+    background-color: gray;
+}
+
+#submit {
+    margin-bottom: 10px;
+}

@@ -1,3 +1,5 @@
-# happy-new-year-2024
-### Happy New Year
-Let's get all things done. 
+# CODE MADNESS
+### Happy New Year 2024
+It's time to start getting all things done. 
+
+## FreecodeCamp 100 days code challenge Repo
