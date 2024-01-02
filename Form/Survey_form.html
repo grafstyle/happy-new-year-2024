@@ -10,35 +10,46 @@
 </head>
 
 <body>
-    <div class="container-sm">
-    <h1 class="text-light" id="title">Welcome 2024</h1>
-    <p class="text-capitalize text-light" id="description">Year expectations, let us know what do you think this year would be like</p>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Made with Bootstrap
+            </a>
+        </div>
+    </nav>
+    <div class="h-100 p-1 bg-light border rounded-3" id="bg">
 
-    
-        <div class="container-sm">
+        <div class="form">
+            <h1 class="text-dark" id="title">Welcome 2024</h1>
+            <p class="text-capitalize text-dark" id="description">Year expectations, let us know what do you think this
+                year would be like</p>
+
+            <br>
 
             <form id="survey-form" class="row g-3">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" required="true" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" required="true" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
+                </div>
 
-                  <div class="mb-3">
-                    <label for="username" class="form-label">Name</label>
+                <div class="mb-3">
+                    <label for="username">Name</label>
                     <input type="name" class="form-control" required="true" id="username" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">You can use your nickname here.</div>
-                  </div>
+                </div>
 
-                  <div class="mb-3">
-                    <label for="user-age" class="form-label">Age</label>
-                    <input type="number" class="form-control" required="true" id="user-age" aria-describedby="emailHelp">
+                <div class="mb-3">
+                    <label for="user-age">Age</label>
+                    <input type="number" class="form-control" required="true" id="user-age"
+                        aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Please choose a real age, thanks.</div>
-                  </div>
-      
+                </div>
+
 
                 <br>
-                <label class="form-label" for="dropdown">Expectation</label>
+                <label for="dropdown">Expectation</label>
                 <select class="form-control" name="selection" id="dropdown">
                     <option value="selection1">Very Good</option>
                     <option value="selection2">Good</option>
@@ -48,18 +59,25 @@
                     <option value="selection3">The Worts</option>
                 </select>
                 <br>
-                <label class="form-label" for="opinion">I'm very serious<input type="radio" id="opinion" name="opinion"
-                        value="name" /></label>
-                <label class="form-label" for="opinion">I'm not sure<input type="radio" id="opinion" name="opinion" value="name" /></label>
-                <label class="form-label" for="opinion">I'm just playing<input type="radio" id="opinion" name="opinion"
-                        value="name" /></label>
-                <label class="form-label" for="opinion">For real<input type="radio" id="opinion" name="opinion" value="name" /></label>
-                <br>
-                <label class="form-label">Yes, I'm being honest<input type="checkbox" id="contactChoice1" name="opinion" value="email"
+                <div class="opinion ">
+                    <label for="opinion">I'm very serious<input class="form-check-input" type="radio" id="opinion"
+                            name="opinion" value="name" /></label>
+                    <label for="opinion">I'm not sure<input class="form-check-input" type="radio" id="opinion"
+                            name="opinion" value="name" /></label>
+                    <label for="opinion">I'm just playing<input class="form-check-input" type="radio" id="opinion"
+                            name="opinion" value="name" /></label>
+                    <label for="opinion">Maybe<input class="form-check-input" type="radio" id="opinion" name="opinion"
+                            value="name" /></label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Can you say why ?</label>
+                </div>
+                <label>Yes, I'm being honest<input type="checkbox" id="contactChoice1" name="opinion" value="email"
                         required="true" /></label>
-                <br>
-                <textarea placeholder="explain why" class="form-control"></textarea>
-                <input class="form-control" id="submit" type="submit">
+
+
+                <button class="btn btn-primary btn-lg" type="button">Submit</button>
             </form>
 
         </div>
