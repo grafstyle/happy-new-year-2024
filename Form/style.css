@@ -1,0 +1,28 @@
+
+.form {
+    display: inline-block;
+    align-content: center;
+    margin: 2% 10% 0 10%;
+  
+}
+#bg{
+    margin: 2% 20% 0 20%;
+}
+
+.opinion label{
+    background: lightgray;
+    display: inline-block;
+    align-content:safe;
+    padding: 2%;
+}
+
+.opinion input{
+    margin-left: 5px;
+}
+
+
+#emailHelp{
+    color: lightgray;
+}
+
+
